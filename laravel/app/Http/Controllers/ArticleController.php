@@ -19,7 +19,21 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::all()->sortByDesc('created_at');
-
+        // $articles = [
+        //     (object) [
+        //         'id' => 1,
+        //         'title' => 'タイトル1',
+        //         'body' => '本文1',
+        //         'kg' => '1',
+        //         'count' => '1',
+        //         'set' => '1',
+        //         'created_at' => now(),
+        //         'user' => (object) [
+        //             'id' => 1,
+        //             'name' => 'ユーザー名1',
+        //         ],
+        //     ],
+        // ];
         return view('articles.index', ['articles' => $articles]);
     }
 

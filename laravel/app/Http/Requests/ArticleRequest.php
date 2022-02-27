@@ -25,7 +25,10 @@ class ArticleRequest extends FormRequest
     {
         return [
             'title' => 'required|max:50',
-            'body' => 'required|max:500',
+            // 'body' => 'required|max:500',
+            'kg' => 'integer|max:9999',
+            'count' => 'integer|max:9999',
+            'set' => 'integer|max:9999',
             'tags' => 'json|regex:/^(?!.*\s).+$/u|regex:/^(?!.*\/).*$/u',
         ];
     }
@@ -34,7 +37,10 @@ class ArticleRequest extends FormRequest
     {
         return [
             'title' => 'トレーニング名',
-            'body' => '本文',
+            // 'body' => '本文',
+            'kg' => '重量',
+            'count' => '回数',
+            'set' => 'セット',
             'tags' => 'タグ',
         ];
     }
