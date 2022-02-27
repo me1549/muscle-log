@@ -9,7 +9,7 @@
         {{ $article->user->name }}
       </div>
       <div class="font-weight-lighter">
-        {{ $article->created_at->format('Y/m/d H:i') }}
+      {{ $article->created_at->format('Y/m/d H:i') }}
       </div>
     </div>
 
@@ -68,9 +68,27 @@
         {{ $article->title }}
       </a>
     </h3>
+
     <div class="card-text">
-      {!! nl2br(e( $article->body )) !!}
+    <h4>重量: {!! nl2br(e( $article->kg )) !!}<small class="text-muted">kg</small></h4>
     </div>
+    <div class="card-text">
+    <h4>回数: {!! nl2br(e( $article->count )) !!}<small class="text-muted">回</small></h4>
+    </div>
+    <div class="card-text">
+    <h4>セット数: {!! nl2br(e( $article->kg )) !!}<small class="text-muted">セット</small></h4>
+    </div>
+    <!-- <div class="card-text">
+      {!! nl2br(e( $article->count )) !!}
+      回
+    </div>
+    <div class="card-text">
+      {!! nl2br(e( $article->set )) !!}
+      セット
+    </div> -->
+    <!-- <div class="card-text">
+      {!! nl2br(e( $article->body )) !!}
+    </div> -->
   </div>
   <div class="card-body pt-0 pb-2 pl-3">
     <div class="card-text">
