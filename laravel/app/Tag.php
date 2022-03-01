@@ -13,7 +13,6 @@ class Tag extends Model
 
     public function getHashtagAttribute(): string
     {
-        // なんか違うのにかえようかな
         return '#' . $this->name;
     }
 

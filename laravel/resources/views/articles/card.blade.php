@@ -8,7 +8,7 @@
         <a href="{{ route('users.show', ['name' => $article->user->name]) }}" class="text-dark">
         {{ $article->user->name }}
       </div>
-      <div class="font-weight-lighter">
+      <div class="font-weight-bold">
       {{ $article->created_at->format('Y/m/d H:i') }}
       </div>
     </div>
@@ -24,11 +24,11 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="{{ route("articles.edit", ['article' => $article]) }}">
-              <i class="fas fa-pen mr-1"></i>記事を更新する
+              <i class="fas fa-pen mr-1"></i>編集
             </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item text-danger" data-toggle="modal" data-target="#modal-delete-{{ $article->id }}">
-              <i class="fas fa-trash-alt mr-1"></i>記事を削除する
+              <i class="fas fa-trash-alt mr-1"></i>削除
             </a>
           </div>
         </div>
@@ -63,7 +63,7 @@
 
   </div>
   <div class="card-body pt-0 pb-2">
-    <h3 class="h4 card-title">
+    <h3 class="h2 card-title">
       <a class="text-dark" href="{{ route('articles.show', ['article' => $article]) }}">
         {{ $article->title }}
       </a>
