@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand navbar-dark blue-gradient">
+<nav class="navbar navbar-expand navbar-dark" style="background-color: #42CB77;">
 
-  <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-1"></i>筋ログ</a>
+  <a class="navbar-brand" href="/"><i class="fas fa-running mr-2"></i>筋ログ</a>
 
   <ul class="navbar-nav ml-auto">
 
@@ -18,7 +18,7 @@
 
     @auth
     <li class="nav-item">
-      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1"></i>投稿する</a>
+      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1"></i>記録作成</a>
     </li>
     @endauth
     
@@ -32,7 +32,7 @@
       <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
         <button class="dropdown-item" type="button"
               onclick="location.href='{{ route("users.show", ["name" => Auth::user()->name]) }}'">
-          マイページ
+          マイ記録
         </button>
         <div class="dropdown-divider"></div>
         <button form="logout-button" class="dropdown-item" type="submit">

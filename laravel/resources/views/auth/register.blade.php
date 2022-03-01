@@ -11,6 +11,12 @@
           <div class="card-body text-center">
             <h2 class="h3 card-title text-center mt-2">ユーザー登録</h2>
 
+            <a href="{{ route('login.{provider}', ['provider' => 'google']) }}" 
+            class="btn btn-outline-dark" data-mdb-ripple-color="dark" style="text-transform:capitalize;">
+            <svg aria-hidden="true" class="native svg-icon iconGoogle" width="18" height="18" viewBox="0 0 18 18"><path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 002.38-5.88c0-.57-.05-.66-.15-1.18z" fill="#4285F4"></path><path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 01-7.18-2.54H1.83v2.07A8 8 0 008.98 17z" fill="#34A853"></path><path d="M4.5 10.52a4.8 4.8 0 010-3.04V5.41H1.83a8 8 0 000 7.18l2.67-2.07z" fill="#FBBC05"></path><path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 001.83 5.4L4.5 7.49a4.77 4.77 0 014.48-3.3z" fill="#EA4335"></path></svg>
+            Googleで登録
+            </a>
+
             @include('error_card_list')
 
             <div class="card-text">
@@ -19,7 +25,7 @@
                 <div class="md-form">
                   <label for="name">ユーザー名</label>
                   <input class="form-control" type="text" id="name" name="name" required value="{{ old('name') }}">
-                  <small>英数字3〜16文字(登録後の変更はできません)</small>
+                  <small>3〜16文字(登録後の変更はできません)</small>
                 </div>
                 <div class="md-form">
                   <label for="email">メールアドレス</label>
@@ -33,7 +39,7 @@
                   <label for="password_confirmation">パスワード(確認)</label>
                   <input class="form-control" type="password" id="password_confirmation" name="password_confirmation" required>
                 </div>
-                <button class="btn btn-block blue-gradient mt-2 mb-2" type="submit">ユーザー登録</button>
+                <button type="submit" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">ユーザー登録</button>
               </form>
 
               <div class="mt-0">
