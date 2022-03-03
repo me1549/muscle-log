@@ -1,6 +1,7 @@
 # 筋トレ記録アプリ「筋ログ」
 日々の筋トレを記録できるアプリ
-＃　使用技術
+
+## 使用技術
 ・HTML/CSS
 ・JavaScript(vue.js)
 ・bootstrap
@@ -9,7 +10,7 @@
 ・postgresSQL
 ・negix
 
-#機能一覧
+## 機能一覧
 ・ユーザー機能
 ・ログイン・ログアウト機能
 ・Googleログイン機能
