@@ -2,13 +2,13 @@
 日々の筋トレを記録できるアプリ
 
 ## 使用技術
--**HTML/CSS
--**JavaScript(vue.js)
--**bootstrap
--**PHP(laravel)
--**Docker
--**postgresSQL
--**negix
+- HTML/CSS
+- JavaScript(vue.js)
+- bootstrap
+- PHP(laravel)
+- Docker
+- postgresSQL
+- negix
 
 ## 機能一覧
 ・ユーザー機能
