@@ -76,7 +76,7 @@
     <h4>回数: {!! nl2br(e( $article->count )) !!}<small class="text-muted">回</small></h4>
     </div>
     <div class="card-text">
-    <h4>セット数: {!! nl2br(e( $article->kg )) !!}<small class="text-muted">セット</small></h4>
+    <h4>セット数: {!! nl2br(e( $article->set )) !!}<small class="text-muted">セット</small></h4>
     </div>
     <!-- <div class="card-text">
       {!! nl2br(e( $article->count )) !!}
