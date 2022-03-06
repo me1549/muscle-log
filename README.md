@@ -2,8 +2,7 @@
 日々の筋トレを記録できるアプリです。
 
 ## ER図
-![Untitled Diagram drawio (3)]
-(https://user-images.githubusercontent.com/64354869/156914764-ff9f0681-ea21-4b12-b687-f8cc8c152e70.svg)
+![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/64354869/156914764-ff9f0681-ea21-4b12-b687-f8cc8c152e70.svg)
 
 
 ## 使用技術
