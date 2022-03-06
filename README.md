@@ -1,6 +1,14 @@
 # 筋トレ記録アプリ「筋ログ」
 日々の筋トレを記録できるアプリです。
 
+## テーブル設計
+- users
+- articles
+- likes
+- tags
+- article_tag
+- follows
+
 ## ER図
 ![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/64354869/156914764-ff9f0681-ea21-4b12-b687-f8cc8c152e70.svg)
 
