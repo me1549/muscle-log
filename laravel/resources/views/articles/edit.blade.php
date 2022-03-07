@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', '記事更新')
+@section('title', '記録更新')
 
 @include('nav')
 
