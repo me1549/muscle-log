@@ -63,21 +63,47 @@
 
   </div>
   <div class="card-body pt-0 pb-2">
-    <h3 class="h2 card-title">
+    <h3 class="h4 card-title" align="center">
       <a class="text-dark" href="{{ route('articles.show', ['article' => $article]) }}">
         {{ $article->title }}
       </a>
     </h3>
+    <br>
+    @foreach($article->tags as $tag)
+    @if($loop->first)
+      <div class="card-body pt-0 pb-4 pl-3" align="center">
+        <div class="card-text line-height">
+    @endif
+          <a href="{{ route('tags.show', ['name' => $tag->name]) }}" class="border p-1 mr-1 mt-1 text-muted">
+            {{ $tag->hashtag }}
+          </a>
+    @if($loop->last)
+        </div>
+      </div>
+    @endif
+  @endforeach
+  <br>
 
-    <div class="card-text">
-    <h4>重量: {!! nl2br(e( $article->kg )) !!}<small class="text-muted">kg</small></h4>
-    </div>
-    <div class="card-text">
-    <h4>回数: {!! nl2br(e( $article->count )) !!}<small class="text-muted">回</small></h4>
-    </div>
-    <div class="card-text">
-    <h4>セット数: {!! nl2br(e( $article->set )) !!}<small class="text-muted">セット</small></h4>
-    </div>
+
+  <table width="100%" class="card-text" align="center">
+    <tr align="center">
+      <td style="font-size: 20px;">重量</td>
+      <td style="font-size: 20px;"> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> </td>
+      <td style="font-size: 20px;">{!! nl2br(e( $article->kg )) !!} kg</td>
+      
+    </tr>
+    <tr align="center">
+      <td style="font-size: 20px;">回数</td>
+      <td style="font-size: 20px;"> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> </td>
+      <td style="font-size: 20px;">{!! nl2br(e( $article->count )) !!} 回</td>
+    </tr>
+    <tr align="center">
+      <td style="font-size: 20px;">セット数</td>
+      <td style="font-size: 20px;"> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> <i class="fas fa-chevron-circle-right"></i> </td>
+      <td style="font-size: 20px;">{!! nl2br(e( $article->set )) !!} セット</td>
+    </tr>
+  </table>
+
     <!-- <div class="card-text">
       {!! nl2br(e( $article->count )) !!}
       回
@@ -90,8 +116,11 @@
       {!! nl2br(e( $article->body )) !!}
     </div> -->
   </div>
+
+  
+
   <div class="card-body pt-0 pb-2 pl-3">
-    <div class="card-text">
+    <div class="card-text" align="right">
       <article-like
         :initial-is-liked-by='@json($article->isLikedBy(Auth::user()))'
         :initial-count-likes='@json($article->count_likes)'
@@ -101,17 +130,5 @@
       </article-like>
     </div>
   </div>
-  @foreach($article->tags as $tag)
-    @if($loop->first)
-      <div class="card-body pt-0 pb-4 pl-3">
-        <div class="card-text line-height">
-    @endif
-          <a href="{{ route('tags.show', ['name' => $tag->name]) }}" class="border p-1 mr-1 mt-1 text-muted">
-            {{ $tag->hashtag }}
-          </a>
-    @if($loop->last)
-        </div>
-      </div>
-    @endif
-  @endforeach
+  
 </div>
