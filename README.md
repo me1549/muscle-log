@@ -55,7 +55,7 @@ URL: http://kinlog.herokuapp.com
   
 #### いいねした記録一覧画面
   <img width="300" alt="スクリーンショット 2022-03-08 14 39 04" src="https://user-images.githubusercontent.com/64354869/157173438-c7657ec8-1d13-47db-929a-7ca90fc8fdf5.png">
-  ユーザーがいいえした記録を見ることができます。
+  ユーザーがいいねした記録を見ることができます。
   
 #### 部位タグ別記録一覧
   <img width="300" alt="スクリーンショット 2022-03-08 14 40 27" src="https://user-images.githubusercontent.com/64354869/157173598-0ada827c-f12f-46fc-807e-5d0b4f107ee1.png">
