@@ -10,4 +10,9 @@
 
     @endforeach
   </div>
+  <br>
+  {{ $articles->links('vendor.pagination.green') }}
+
 @endsection
+
+
