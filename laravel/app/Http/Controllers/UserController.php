@@ -11,7 +11,7 @@ class UserController extends Controller
     {
         $user = User::where('name', $name)->first()
         ->load(['articles.user', 'articles.likes', 'articles.tags']);
-
+        
         $articles = $user->articles->sortByDesc('created_at');
 
         return view('users.show', [
@@ -87,4 +87,6 @@ class UserController extends Controller
 
         return ['name' => $name];
     }
+
+    
 }
