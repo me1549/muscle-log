@@ -18,15 +18,9 @@ class ArticleController extends Controller
 
     public function index()
     {
-        // $articles = Article::paginate(5)->sortByDesc('created_at')
-        // ->load(['user','likes','tags']);
+        // $articles = Article::all()->sortByDesc('created_at')
+        //     ->load(['user', 'likes', 'tags']);
 
-        // $articles = Article::orderByRaw('created_at')
-        // ->select(['user','likes','tags'])
-        // ->paginate(2);
-        // $articles = Article::orderBy('created_at','desk')
-        // ->with(['user','likes','tags'])
-        // ->paginate(5);
 
         $all_articles = Article::orderBy('created_at', 'desc');
         $articles = $all_articles->with(['user','likes', 'tags'])->paginate(5);
