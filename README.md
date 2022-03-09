@@ -6,6 +6,9 @@ URL: http://kinlog.herokuapp.com
 
 <img width="400" alt="スクリーンショット 2022-03-08 14 21 34" src="https://user-images.githubusercontent.com/64354869/157171629-d43c6df2-668d-400b-bfba-bf11c34324be.png"> 
 
+
+
+
 右上のログインボタンからゲストログインできます。
 
 <img width="400" alt="スクリーンショット 2022-03-09 10 32 52" src="https://user-images.githubusercontent.com/64354869/157354935-f44e2b92-23aa-4bb1-98ed-b5563ea07c32.png">
