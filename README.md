@@ -83,7 +83,7 @@ URL: http://kinlog.herokuapp.com
 
 ## テーブル構成
 users・articles・likes・tags・article_tag・followsの６のテーブルで構成されています。
-usersテーブルはユーザーを、articleテーブルでは記録を、likesテーブルは誰がどの記録をいいねしているかを、tagsテーブルは部位タグを管理しています。article_tagはどの記録に何の部位タグがついているかを、followsテーブルはどのユーザーがどのユーザをフォローしているかをそれぞれ管理しています。
+usersテーブルはユーザーを、articleテーブルでは記録を、likesテーブルは誰がどの記録をいいねしているかを、tagsテーブルは部位タグを、article_tagはどの記録に何の部位タグがついているかを、followsテーブルはどのユーザーがどのユーザをフォローしているかをそれぞれ管理しています。
 
 
 ## ER図
