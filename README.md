@@ -33,7 +33,7 @@ URL: http://kinlog.herokuapp.com
 - PHP(laravel)
 - Docker
 - postgresSQL
-- negix
+- nginx
 
 ## 機能一覧
 - ユーザー機能
