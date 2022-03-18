@@ -11,7 +11,6 @@ class Article extends Model
     //
     protected $fillable = [
         'title',
-        // 'body',
         'kg',
         'count',
         'set',
@@ -43,5 +42,4 @@ class Article extends Model
     {
         return $this->belongsToMany('App\Tag')->withTimestamps();
     }
-
 }
