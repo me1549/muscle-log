@@ -18,13 +18,8 @@ class ArticleController extends Controller
 
     public function index()
     {
-        // $articles = Article::all()->sortByDesc('created_at')
-        //     ->load(['user', 'likes', 'tags']);
-
-
         $all_articles = Article::orderBy('created_at', 'desc');
-        $articles = $all_articles->with(['user','likes', 'tags'])->paginate(5);
-
+        $articles = $all_articles->with(['user', 'likes', 'tags'])->paginate(5);
 
         return view('articles.index', ['articles' => $articles]);
     }
@@ -114,5 +109,4 @@ class ArticleController extends Controller
             'countLikes' => $article->count_likes,
         ];
     }
-
 }

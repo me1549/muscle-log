@@ -21,7 +21,6 @@ class CreateArticlesTable extends Migration
             $table->bigInteger('count');
             $table->bigInteger('set');
             $table->bigInteger('user_id');
-            // articlesテーブルのuser_idカラムは、usersテーブルのidカラムを参照することという制約
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
