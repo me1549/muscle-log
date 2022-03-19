@@ -27,10 +27,9 @@ URL: http://kinlog.herokuapp.com
 「筋ログ」のおかげで僕の筋肉は順調に大きくなっています。（胸板が1cm分厚くなりました。）
 
 ## 使用技術
-- HTML/CSS
+- PHP(laravel)
 - JavaScript(vue.js)
 - bootstrap
-- PHP(laravel)
 - Docker
 - postgresSQL
 - nginx
