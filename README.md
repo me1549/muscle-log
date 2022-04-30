@@ -77,7 +77,8 @@ URL: http://kinlog.herokuapp.com
 
 ### ページネーション
 
-<img width="300" alt="スクリーンショット 2022-03-08 15 01 04" src="https://user-images.githubusercontent.com/64354869/157176136-13659175-a57d-4b7d-bc42-088ed0b19754.png">
+<img width="290" alt="スクリーンショット 2022-04-30 19 13 50" src="https://user-images.githubusercontent.com/64354869/166101406-d8f377c9-d5f0-4d43-9eb8-e4735c62b101.png">
+
 
 
 ## テーブル構成
