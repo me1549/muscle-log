@@ -11,7 +11,7 @@
     @endforeach
   </div>
   <br>
-  {{ $articles->links('vendor.pagination.green') }}
+  {{ $articles->links('vendor.pagination.simple-bootstrap-4') }}
 
 @endsection
 
