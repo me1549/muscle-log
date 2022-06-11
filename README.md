@@ -31,7 +31,7 @@ URL: http://kinlog.herokuapp.com
 - JavaScript(vue.js)
 - bootstrap
 - Docker
-- postgresSQL
+- postgreSQL
 - nginx
 
 ## 機能一覧
